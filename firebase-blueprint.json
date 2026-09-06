@@ -1,0 +1,84 @@
+{
+  "entities": {
+    "analyses": {
+      "title": "Analysis",
+      "description": "Saved code analysis containing explanations, derivations, and optimizations",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "UID of the owner student user"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title or algorithm name of the code snippet"
+        },
+        "language": {
+          "type": "string",
+          "description": "Programming language (e.g. C++, Python, Java)"
+        },
+        "code": {
+          "type": "string",
+          "description": "Original source code analyzed"
+        },
+        "overview": {
+          "type": "string",
+          "description": "Educational overview of what the program does"
+        },
+        "input": {
+          "type": "string",
+          "description": "Expected input description"
+        },
+        "output": {
+          "type": "string",
+          "description": "Expected output description"
+        },
+        "breakdown": {
+          "type": "array",
+          "description": "Logical code sections with explanations"
+        },
+        "execution": {
+          "type": "array",
+          "description": "Step-by-step trace of program execution"
+        },
+        "timeComplexity": {
+          "type": "string",
+          "description": "Primary Big-O time complexity (e.g. O(n^2))"
+        },
+        "spaceComplexity": {
+          "type": "string",
+          "description": "Primary Big-O space complexity (e.g. O(1))"
+        },
+        "timeDerivation": {
+          "type": "array",
+          "description": "Step-by-step mathematical reasoning for time complexity"
+        },
+        "spaceDerivation": {
+          "type": "array",
+          "description": "Step-by-step mathematical reasoning for space complexity"
+        },
+        "optimization": {
+          "type": "object",
+          "description": "Optimized solution details and time-space tradeoff"
+        },
+        "learningInsights": {
+          "type": "array",
+          "description": "Core educational takeaways"
+        },
+        "interviewTip": {
+          "type": "string",
+          "description": "Interview and algorithm tip"
+        },
+        "explanationLevel": {
+          "type": "string",
+          "description": "Beginner, Student, or Interview"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp when the analysis was saved"
+        }
+      },
+      "required": ["userId", "title", "language", "code", "timeComplexity", "spaceComplexity", "createdAt"]
+    }
+  }
+}

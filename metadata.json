@@ -1,0 +1,6 @@
+{
+  "name": "CodeLens AI",
+  "description": "Understand Code. Analyze Complexity. Learn to Optimize. AI-powered programming learning assistant for students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
